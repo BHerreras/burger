@@ -7,7 +7,7 @@ var burger = require("../models/burger.js");
 router.get("/", function (req, res) {
 	res.redirect("/burgers");
 });
-
+//get route
 router.get("/burgers", function (req, res) {
 	// express callback response by calling burger.selectAllBurger
 	burger.all(function (burgerData) {
